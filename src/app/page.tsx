@@ -1,39 +1,54 @@
 import { FaHeartCircleBolt } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
 import Link from "next/link";
+import Marquee from "react-fast-marquee";
+import Image from "next/image";
 export default function Home() {
   return (
     <>
       {/* header */}
-      <section className="w-full min-h-dvh flex justify-center items-center rounded-b-2xl shadow-xl ">
-        {/* content header */}
-        <div className="w-full space-y-2 px-8 items-center ">
-          <FaHeartCircleBolt className="animate__animated animate__fadeInDown" />
-          <h1 className="text-2xl font-bold animate__animated animate__fadeInLeft">
-            MAKE IT SIMPLE, MAKE ME BETTER
+      <section className="flex flex-col md:flex-row  justify-center items-center w-full min-h-dvh">
+        <Image
+          alt="roket"
+          src={"/roket.png"}
+          width={100}
+          height={100}
+          className="w-40 animate-bounce"
+        />
+        <div className="px-1.5 text-center md:text-left">
+          <h1 className="text-2xl font-bold text-current font-sans">
+            HR<span className="text-primary">DEV</span>
           </h1>
-          <p className="text-sm text-slate-600 animate__animated animate__fadeInLeft">
-            Semua itu indah di saat kamu mulai mewarnai hari ku
-          </p>
-          <button className="btn btn-sm btn-primary shadow-xl animate__animated animate__fadeInUp">
+          <h2 className="text-4xl font-bold">MAKE IT SIMPLE, MAKE ME BETTER</h2>
+          <button className="btn btn-sm btn-primary shadow-lg mt-2">
             Contact
           </button>
         </div>
       </section>
 
       {/* section abaout */}
-      <section className="flex justify-center gap-2 items-center rounded-b-2xl shadow-xl bg-gradient-to-tr from-lime-200 to-lime-400">
-        <div className="w-20 bg-pattern min-h-80"></div>
-        <div className="flex-auto p-4">
-          <h1 className="text-2xl font-medium">AboutME</h1>
-          <p className="text-slate-600">
-            Hanya seseorang yang terus berjuang dengan segala cara untuk sebuah
-            fiksi menjadi fakta.
-          </p>
+      <section className="w-full  px-1.5 flex justify-center items-center">
+        {/* content */}
+        <div className="card bg-gradient-to-tr from-white/10 to-white/50 w-1/2">
+          <div className="card-body">
+            <Image
+              alt="Me"
+              src={"/ME.jpg"}
+              width={100}
+              height={100}
+              className="w-40 rounded-full shadow-lg mb-2"
+            />
+            <h1 className="text-xl font-semibold">Rikza Fauzan Nurfadilah</h1>
+            <h3 className="text-lg font-light">
+              HI IM A <span className="font-bold">FRONT-END DEVELOPER</span>{" "}
+              WITH <span className="font-bold">1 YEAR EXPERIEND</span>
+              <span className="text-primary font-extrabold">...</span>
+            </h3>
+          </div>
         </div>
       </section>
 
-      {/* section abaout */}
+      {/* section Project */}
       <section className="p-4 w-full h-64 flex justify-center items-center  rounded-b-2xl shadow-xl">
         <div className="text-center space-y-2">
           <div className="w-full flex justify-center">
