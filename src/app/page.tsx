@@ -7,7 +7,8 @@ import Image from "next/image";
 import CardProject from "@/components/Cards/CardProject";
 import ButtonCV from "@/components/CV/ButtonCV";
 import CardProgress from "@/components/Cards/CardProgress";
-import { listSkill, listProject } from "@/Data/Main";
+import { listSkill } from "@/Data/Skill";
+import { listProject } from "@/Data/Project";
 export default function Home() {
   // list project
   // const listProject = [
