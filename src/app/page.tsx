@@ -78,7 +78,7 @@ export default function Home() {
       <section className="w-full flex justify-center items-center py-10">
         <div>
           <h1 className="text-2xl font-semibold">
-            Skill <span className="text-primary">.</span>
+            Skill<span className="text-primary">.</span>
           </h1>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {listSkill.map((items,index)=>{
