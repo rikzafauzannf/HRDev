@@ -62,7 +62,7 @@ export default function Home() {
           </h1>
           <h2 className="text-4xl font-bold font-mono">MAKE IT SIMPLE, MAKE ME BETTER</h2>
           <Link href={"https://wa.me/6289603711237"} className="btn btn-sm btn-primary shadow-lg mt-2">
-            <MdOutlineContactSupport /> Contact
+            Contact <MdOutlineContactSupport />
           </Link>
         </div>
       </section>
