@@ -32,7 +32,7 @@ export default function Home() {
       </section>
 
       {/* section abaout */}
-      <section className="w-full px-1.5 flex justify-center items-center">
+      <section className="w-full md:px-1.5 px-2 flex justify-center items-center">
         {/* content */}
         <div className="card bg-gradient-to-tr from-white/10 to-white/50 md:w-[50%]">
           <div className="card-body">
@@ -53,7 +53,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="w-full flex justify-center items-center py-10">
+      <section className="w-full flex justify-center items-center py-10 px-2 md:px-0">
         <div>
           <h1 className="text-2xl font-semibold">
             Project<span className="text-primary">.</span>
@@ -75,7 +75,7 @@ export default function Home() {
       </section>
 
       {/* relate */}
-      <section className="w-full flex justify-center items-center py-10">
+      <section className="w-full flex justify-center items-center py-10 px-2 md:px-0">
         <div>
           <h1 className="text-2xl font-semibold">
             Skill<span className="text-primary">.</span>
