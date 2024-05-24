@@ -6,7 +6,6 @@ interface CustomCSSProperties extends CSSProperties {
 
 interface dataProps {
     skill : string;
-    score : number;
 }
 
 const CardProgress: React.FC<dataProps> = (props) => {
@@ -14,7 +13,7 @@ const CardProgress: React.FC<dataProps> = (props) => {
     <div className="card w-full shadow-lg">
       <div className="card-body text-center">
         <h1 className="text-xl font-semibold">{props.skill}</h1>
-        <div 
+        {/* <div 
           className="radial-progress text-primary shadow-lg font-semibold" 
           style={{ '--value': props.score } as CustomCSSProperties} 
           role="progressbar" 
@@ -23,7 +22,7 @@ const CardProgress: React.FC<dataProps> = (props) => {
           aria-valuemax={100}
         >
           {props.score}%
-        </div>
+        </div> */}
       </div>
     </div>
   );

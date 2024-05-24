@@ -51,27 +51,21 @@ export default function Home() {
   const listSkill = [
     {
       skill:"HTML 5",
-      score : 80,
     },
     {
       skill:"CSS 3",
-      score : 80,
     },
     {
       skill:"JavaScript",
-      score : 80,
     },
     {
       skill:"Bootstrap 5",
-      score : 90,
     },
     {
       skill:"TailwindCSS",
-      score : 70,
     },
     {
       skill:"NextJS",
-      score : 70,
     },
   ];
   return (
@@ -143,15 +137,14 @@ export default function Home() {
       <section className="w-full flex justify-center items-center py-10">
         <div>
           <h1 className="text-2xl font-semibold">
-            Skill Relate<span className="text-primary">.</span>
+            Skill <span className="text-primary">.</span>
           </h1>
-          <div className="grid md:grid-cols-2 gap-4">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {listSkill.map((items,index)=>{
               return(
                 <CardProgress
                 key={index}
                 skill={items.skill}
-                score={items.score}
                 />
               )
             })}
