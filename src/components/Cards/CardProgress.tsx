@@ -10,7 +10,7 @@ interface dataProps {
 
 const CardProgress: React.FC<dataProps> = (props) => {
   return (
-    <div className="card w-full shadow-lg">
+    <div className="card w-full shadow-lg bg-neutral-content/10">
       <div className="card-body text-center">
         <h1 className="text-xl font-semibold">{props.skill}</h1>
         {/* <div 
