@@ -44,7 +44,7 @@ export default function Home() {
               className="md:w-40 rounded-full shadow-lg mb-2"
             />
             <h1 className="text-xl font-semibold">Rikza Fauzan Nurfadilah</h1>
-            <h3 className="md:text-lg font-light">
+            <h3 className="md:text-lg text-base font-light">
               HI IM A <span className="font-bold">FRONT-END DEVELOPER</span>{" "}
               WITH <span className="font-bold">1 YEAR EXPERIEND</span>
               <span className="text-primary font-extrabold">...</span>
