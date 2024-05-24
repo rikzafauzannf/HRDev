@@ -3,7 +3,40 @@ import { FaDollarSign } from "react-icons/fa";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
+import CardProject from "@/components/Cards/CardProject";
 export default function Home() {
+  const listProject = [
+    {
+      project: "Kelom",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.kelom.tasikmalayakota.go.id",
+    },
+    {
+      project: "Goso",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.goso.tasikmalayakota.go.id",
+    },
+    {
+      project: "Bageur",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.bageur.tasikmalayakota.go.id",
+    },
+    {
+      project: "SetamanCinta",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.setamancinta.tasikmalayakota.go.id",
+    },
+    {
+      project: "Katasik",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.katasik.tasikmalayakota.go.id",
+    },
+  ];
   return (
     <>
       {/* header */}
@@ -27,16 +60,16 @@ export default function Home() {
       </section>
 
       {/* section abaout */}
-      <section className="w-full  px-1.5 flex justify-center items-center">
+      <section className="w-full px-1.5 flex justify-center items-center">
         {/* content */}
-        <div className="card bg-gradient-to-tr from-white/10 to-white/50 w-1/2">
+        <div className="card bg-gradient-to-tr from-white/10 to-white/50 md:w-1/2">
           <div className="card-body">
             <Image
               alt="Me"
               src={"/ME.jpg"}
               width={100}
               height={100}
-              className="w-40 rounded-full shadow-lg mb-2"
+              className="md:w-40 rounded-full shadow-lg mb-2"
             />
             <h1 className="text-xl font-semibold">Rikza Fauzan Nurfadilah</h1>
             <h3 className="text-lg font-light">
@@ -48,6 +81,26 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="w-full flex justify-center items-center py-10">
+        <div>
+          <h1 className="text-2xl font-semibold">
+            Project<span className="text-primary">.</span>
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            {listProject.map((item, index) => {
+              return (
+                <CardProject
+                  key={index}
+                  project={item.project}
+                  place={item.place}
+                  year={item.year}
+                  visit={item.visit}
+                />
+              );
+            })}
+          </div>
+        </div>
+      </section>
       {/* section Project */}
       <section className="p-4 w-full h-64 flex justify-center items-center  rounded-b-2xl shadow-xl">
         <div className="text-center space-y-2">
