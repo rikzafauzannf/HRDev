@@ -1,75 +1,14 @@
-import { FaHeartCircleBolt } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
 import { MdOutlineContactSupport } from "react-icons/md";
 import Link from "next/link";
-import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CardProject from "@/components/Cards/CardProject";
 import ButtonCV from "@/components/CV/ButtonCV";
 import CardProgress from "@/components/Cards/CardProgress";
 import { listSkill } from "@/Data/Skill";
 import { listProject } from "@/Data/Project";
-export default function Home() {
-  // list project
-  // const listProject = [
-  //   {
-  //     project: "Kelom",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.kelom.tasikmalayakota.go.id",
-  //   },
-  //   {
-  //     project: "Index Kemiskinan",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.kelom.tasikmalayakota.go.id/Map_Miskin_Eks",
-  //   },
-  //   {
-  //     project: "Goso",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.goso.tasikmalayakota.go.id",
-  //   },
-  //   {
-  //     project: "Bageur",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.bageur.tasikmalayakota.go.id",
-  //   },
-  //   {
-  //     project: "SetamanCinta",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.setamancinta.tasikmalayakota.go.id",
-  //   },
-  //   {
-  //     project: "Katasik",
-  //     place: "Diskominfo",
-  //     year: "2023",
-  //     visit: "https://www.katasik.tasikmalayakota.go.id",
-  //   },
-  // ];
 
-  // const listSkill = [
-  //   {
-  //     skill:"HTML 5",
-  //   },
-  //   {
-  //     skill:"CSS 3",
-  //   },
-  //   {
-  //     skill:"JavaScript",
-  //   },
-  //   {
-  //     skill:"Bootstrap 5",
-  //   },
-  //   {
-  //     skill:"TailwindCSS",
-  //   },
-  //   {
-  //     skill:"NextJS",
-  //   },
-  // ];
+export default function Home() {
   return (
     <>
       {/* header */}
