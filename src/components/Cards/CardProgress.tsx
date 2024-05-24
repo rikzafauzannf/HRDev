@@ -11,7 +11,7 @@ interface dataProps {
 const CardProgress: React.FC<dataProps> = (props) => {
   return (
     <div className="card w-full shadow-lg bg-neutral-content/10">
-      <div className="card-body text-center">
+      <div className="card-body text-center hover:text-primary transition-all ease-in-out delay-150 duration-300">
         <h1 className="text-xl font-semibold">{props.skill}</h1>
         {/* <div 
           className="radial-progress text-primary shadow-lg font-semibold" 

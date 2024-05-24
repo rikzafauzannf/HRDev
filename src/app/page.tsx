@@ -83,7 +83,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold text-current font-sans">
             HR<span className="text-primary font-mono">DEV</span>
           </h1>
-          <h2 className="text-4xl font-bold font-mono">MAKE IT SIMPLE, MAKE ME BETTER</h2>
+          <h2 className="text-4xl font-bold">MAKE IT SIMPLE, MAKE ME BETTER</h2>
           <Link href={"https://wa.me/6289603711237"} className="btn btn-sm btn-primary shadow-lg mt-2">
             Contact <MdOutlineContactSupport />
           </Link>
@@ -103,7 +103,7 @@ export default function Home() {
               className="md:w-40 rounded-full shadow-lg mb-2"
             />
             <h1 className="text-xl font-semibold">Rikza Fauzan Nurfadilah</h1>
-            <h3 className="text-lg font-light">
+            <h3 className="md:text-lg font-light">
               HI IM A <span className="font-bold">FRONT-END DEVELOPER</span>{" "}
               WITH <span className="font-bold">1 YEAR EXPERIEND</span>
               <span className="text-primary font-extrabold">...</span>
