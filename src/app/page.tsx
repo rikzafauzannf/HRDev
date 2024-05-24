@@ -145,7 +145,7 @@ export default function Home() {
           <h1 className="text-2xl font-semibold">
             Skill Relate<span className="text-primary">.</span>
           </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          <div className="grid md:grid-cols-2 gap-4">
             {listSkill.map((items,index)=>{
               return(
                 <CardProgress
