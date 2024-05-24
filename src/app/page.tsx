@@ -6,6 +6,7 @@ import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CardProject from "@/components/Cards/CardProject";
 import ButtonCV from "@/components/CV/ButtonCV";
+import CardProgress from "@/components/Cards/CardProgress";
 export default function Home() {
   const listProject = [
     {
@@ -109,6 +110,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* relate */}
+      <section className="w-full flex justify-center items-center py-10">
+        <div>
+          <h1 className="text-2xl font-semibold">
+            Skill Relate<span className="text-primary">.</span>
+          </h1>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <CardProgress/>
+          </div>
+        </div>
+
+      </section>
+
       {/* section Project */}
       <section className="p-4 w-full h-64 flex justify-center items-center  rounded-b-2xl shadow-xl">
         <div className="text-center space-y-2">
