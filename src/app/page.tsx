@@ -50,12 +50,12 @@ export default function Home() {
         />
         <div className="px-1.5 text-center md:text-left">
           <h1 className="text-2xl font-bold text-current font-sans">
-            HR<span className="text-primary">DEV</span>
+            HR<span className="text-primary font-mono">DEV</span>
           </h1>
-          <h2 className="text-4xl font-bold">MAKE IT SIMPLE, MAKE ME BETTER</h2>
-          <button className="btn btn-sm btn-primary shadow-lg mt-2">
+          <h2 className="text-4xl font-bold font-mono">MAKE IT SIMPLE, MAKE ME BETTER</h2>
+          <Link href={"wa.me/089603711237"} className="btn btn-sm btn-primary shadow-lg mt-2">
             Contact
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -110,9 +110,9 @@ export default function Home() {
           <h1 className="uppercase text-sm">
             Hanya <b>kamu</b> yang dapat membuatku lupa akan <b>kata lelah</b>
           </h1>
-          <Link href={"project"} className="btn btn-sm btn-primary shadow-xl">
+          {/* <Link href={"project"} className="btn btn-sm btn-primary shadow-xl">
             {"project >>"}
-          </Link>
+          </Link> */}
         </div>
       </section>
     </>
