@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaRegEye } from "react-icons/fa";
 
 interface ContentProps {
   project: string;
@@ -35,7 +36,7 @@ const CardProject: React.FC<ContentProps> = (props) => {
                 target="blank"
                 className="btn btn-sm btn-primary shadow-lg mt-3"
               >
-                Visit
+                <FaRegEye /> Visit
               </Link>
             )}
           </div>
