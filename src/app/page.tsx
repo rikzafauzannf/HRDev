@@ -13,6 +13,12 @@ export default function Home() {
       visit: "https://www.kelom.tasikmalayakota.go.id",
     },
     {
+      project: "Index Kemiskinan",
+      place: "Diskominfo",
+      year: "2023",
+      visit: "https://www.kelom.tasikmalayakota.go.id/Map_Miskin_Eks",
+    },
+    {
       project: "Goso",
       place: "Diskominfo",
       year: "2023",
