@@ -7,67 +7,68 @@ import Image from "next/image";
 import CardProject from "@/components/Cards/CardProject";
 import ButtonCV from "@/components/CV/ButtonCV";
 import CardProgress from "@/components/Cards/CardProgress";
+import { listSkill, listProject } from "@/Data/Main";
 export default function Home() {
   // list project
-  const listProject = [
-    {
-      project: "Kelom",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.kelom.tasikmalayakota.go.id",
-    },
-    {
-      project: "Index Kemiskinan",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.kelom.tasikmalayakota.go.id/Map_Miskin_Eks",
-    },
-    {
-      project: "Goso",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.goso.tasikmalayakota.go.id",
-    },
-    {
-      project: "Bageur",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.bageur.tasikmalayakota.go.id",
-    },
-    {
-      project: "SetamanCinta",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.setamancinta.tasikmalayakota.go.id",
-    },
-    {
-      project: "Katasik",
-      place: "Diskominfo",
-      year: "2023",
-      visit: "https://www.katasik.tasikmalayakota.go.id",
-    },
-  ];
+  // const listProject = [
+  //   {
+  //     project: "Kelom",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.kelom.tasikmalayakota.go.id",
+  //   },
+  //   {
+  //     project: "Index Kemiskinan",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.kelom.tasikmalayakota.go.id/Map_Miskin_Eks",
+  //   },
+  //   {
+  //     project: "Goso",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.goso.tasikmalayakota.go.id",
+  //   },
+  //   {
+  //     project: "Bageur",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.bageur.tasikmalayakota.go.id",
+  //   },
+  //   {
+  //     project: "SetamanCinta",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.setamancinta.tasikmalayakota.go.id",
+  //   },
+  //   {
+  //     project: "Katasik",
+  //     place: "Diskominfo",
+  //     year: "2023",
+  //     visit: "https://www.katasik.tasikmalayakota.go.id",
+  //   },
+  // ];
 
-  const listSkill = [
-    {
-      skill:"HTML 5",
-    },
-    {
-      skill:"CSS 3",
-    },
-    {
-      skill:"JavaScript",
-    },
-    {
-      skill:"Bootstrap 5",
-    },
-    {
-      skill:"TailwindCSS",
-    },
-    {
-      skill:"NextJS",
-    },
-  ];
+  // const listSkill = [
+  //   {
+  //     skill:"HTML 5",
+  //   },
+  //   {
+  //     skill:"CSS 3",
+  //   },
+  //   {
+  //     skill:"JavaScript",
+  //   },
+  //   {
+  //     skill:"Bootstrap 5",
+  //   },
+  //   {
+  //     skill:"TailwindCSS",
+  //   },
+  //   {
+  //     skill:"NextJS",
+  //   },
+  // ];
   return (
     <>
       {/* header */}
