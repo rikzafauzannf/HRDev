@@ -4,6 +4,7 @@ import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
 import CardProject from "@/components/Cards/CardProject";
+import ButtonCV from "@/components/CV/ButtonCV";
 export default function Home() {
   const listProject = [
     {
@@ -119,6 +120,7 @@ export default function Home() {
           {/* <Link href={"project"} className="btn btn-sm btn-primary shadow-xl">
             {"project >>"}
           </Link> */}
+          <ButtonCV/>
         </div>
       </section>
     </>
