@@ -4,20 +4,25 @@ interface CustomCSSProperties extends CSSProperties {
   '--value'?: number;
 }
 
-const CardProgress = () => {
+interface dataProps {
+    skill : string;
+    score : number;
+}
+
+const CardProgress: React.FC<dataProps> = (props) => {
   return (
     <div className="card w-full shadow-lg">
       <div className="card-body text-center">
-        <h1>HTML</h1>
+        <h1 className="text-xl font-semibold">{props.skill}</h1>
         <div 
-          className="radial-progress" 
-          style={{ '--value': 70 } as CustomCSSProperties} 
+          className="radial-progress text-primary shadow-lg font-semibold" 
+          style={{ '--value': props.score } as CustomCSSProperties} 
           role="progressbar" 
-          aria-valuenow={70} 
+          aria-valuenow={props.score} 
           aria-valuemin={0} 
           aria-valuemax={100}
         >
-          70%
+          {props.score}%
         </div>
       </div>
     </div>

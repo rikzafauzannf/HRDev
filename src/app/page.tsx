@@ -8,6 +8,7 @@ import CardProject from "@/components/Cards/CardProject";
 import ButtonCV from "@/components/CV/ButtonCV";
 import CardProgress from "@/components/Cards/CardProgress";
 export default function Home() {
+  // list project
   const listProject = [
     {
       project: "Kelom",
@@ -44,6 +45,33 @@ export default function Home() {
       place: "Diskominfo",
       year: "2023",
       visit: "https://www.katasik.tasikmalayakota.go.id",
+    },
+  ];
+
+  const listSkill = [
+    {
+      skill:"HTML 5",
+      score : 80,
+    },
+    {
+      skill:"CSS 3",
+      score : 80,
+    },
+    {
+      skill:"JavaScript",
+      score : 80,
+    },
+    {
+      skill:"Bootstrap 5",
+      score : 90,
+    },
+    {
+      skill:"TailwindCSS",
+      score : 70,
+    },
+    {
+      skill:"NextJS",
+      score : 70,
     },
   ];
   return (
@@ -118,7 +146,15 @@ export default function Home() {
             Skill Relate<span className="text-primary">.</span>
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <CardProgress/>
+            {listSkill.map((items,index)=>{
+              return(
+                <CardProgress
+                key={index}
+                skill={items.skill}
+                score={items.score}
+                />
+              )
+            })}
           </div>
         </div>
 
