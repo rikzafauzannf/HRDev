@@ -6,7 +6,7 @@ import "animate.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "RHDev",
+  title: "HRDev",
   description: "Make it simple, make me better",
 };
 
@@ -16,7 +16,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" data-theme="night">
+    <html lang="en" data-theme="pastel">
       <body className={inter.className}>{children}</body>
     </html>
   );
