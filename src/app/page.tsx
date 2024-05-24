@@ -1,5 +1,6 @@
 import { FaHeartCircleBolt } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
+import { MdOutlineContactSupport } from "react-icons/md";
 import Link from "next/link";
 import Marquee from "react-fast-marquee";
 import Image from "next/image";
@@ -61,7 +62,7 @@ export default function Home() {
           </h1>
           <h2 className="text-4xl font-bold font-mono">MAKE IT SIMPLE, MAKE ME BETTER</h2>
           <Link href={"https://wa.me/6289603711237"} className="btn btn-sm btn-primary shadow-lg mt-2">
-            Contact
+            <MdOutlineContactSupport /> Contact
           </Link>
         </div>
       </section>
