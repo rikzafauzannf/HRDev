@@ -12,7 +12,7 @@ interface ContentProps {
 
 const CardProject: React.FC<ContentProps> = (props) => {
   return (
-    <div className="card rounded-xl shadow-xl bg-neutral-content/10">
+    <div className="card rounded-xl shadow-xl bg-neutral-content/10 hover:bg-transparent transition-all ease-in-out delay-150">
       <div className="card-body space-y-0">
         <div className="flex w-full items-center justify-start gap-4">
           <Image
