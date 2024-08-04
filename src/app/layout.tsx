@@ -6,8 +6,8 @@ import "animate.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "HRDev",
-  description: "Make it simple, make me better",
+  title: "Rikza Fauzan Nurfadilah",
+  description: "MySimple Portofolio Resume",
 };
 
 export default function RootLayout({
