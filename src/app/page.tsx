@@ -34,7 +34,7 @@ export default function Home() {
       {/* section abaout */}
       <section className="w-full md:px-1.5 px-2 flex justify-center items-center">
         {/* content */}
-        <div className="card bg-gradient-to-tr from-white/10 to-white/50 md:w-[50%]">
+        <div className="card bg-gradient-to-tr from-white to-white/50 md:w-[50%] shadow">
           <div className="card-body">
             <Image
               alt="Me"
