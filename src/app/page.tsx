@@ -39,7 +39,7 @@ export default function Home() {
       </section>
 
       {/* section abaout */}
-      <section className="w-full md:px-1.5 px-2 flex justify-center items-center sticky top-0">
+      <section className="w-full md:px-1.5 px-2 flex justify-center items-center sticky top-0 z-30">
         {/* content */}
         <div className="card bg-gradient-to-tr from-white to-white/50 md:w-[50%] shadow-lg glass">
           <div className="card-body">
