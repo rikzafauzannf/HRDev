@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       {/* header */}
-      <section className="flex flex-col md:flex-row  justify-center items-center w-full min-h-dvh relative">
+      <section className="flex flex-col md:flex-row  justify-center items-center w-full min-h-dvh relative overflow-hidden">
         <Image
           alt="waves"
           src={"/waves.svg"}
